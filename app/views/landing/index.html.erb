@@ -38,7 +38,50 @@
     </div><!-- /container -->
   </div><!-- /headerwrap -->
 
+    <div class="container">
+    <div class="row mt centered">
+      <div class="col-lg-6 col-lg-offset-3">
+        <h1>Consejos Saludables</h1>
+        <h3>3 Sencillos consejos para tener una vida saludable.</h3>
+      </div>
+    </div><!-- /row -->
+    
+    <div class="row mt centered">
+      <div class="col-lg-4">
+        <%= image_tag "waterglass.jpg", class: "img-thumbnail img-responsive", width:"180" %>
+        <h4>1 - Toma Agua</h4>
+        <p>Para mantener la salud hay q hidratarse bien ya sea en clima frio o caliente.</p>
+      </div><!--/col-lg-4 -->
+
+      <div class="col-lg-4">
+        <%= image_tag "vegetables.jpg", class: "img-thumbnail img-responsive", width:"180" %>
+        <h4>2 - Come Frutas y Verduras</h4>
+        <p>Alcalinizar el organismo una forma de mantenerse sano, consuma frutas y verduras.</p>
+
+      </div><!--/col-lg-4 -->
+
+      <div class="col-lg-4">
+        <%= image_tag "soda.jpg", class: "img-thumbnail img-responsive", width:"180" %>
+        <h4>3 - No tomes Gaseosas</h4>
+        <p>La OMS ya esta en campaña promocinando lo poco saludable del azucar usada en las bebidas gaseosas.</p>
+
+      </div><!--/col-lg-4 -->
+    </div><!-- /row -->
+  </div><!-- /container -->
+
   <div class="container">
+    <hr>
+    <div class="row centered">
+      <div class="col-lg-6 col-lg-offset-3">
+        <%= form_for(@user, html: {class: "form-inline"}) do |f|%>
+          <div class="form-group">
+            <%= f.text_field :email, type: "email", class: "form-control input-lg col-lg-3", placeholder: "Email"%>
+          </div>
+          <%= f.submit "Inscribirse", type: "submit" , class:"btn btn-warning btn-lg"%>
+        <% end %>
+      </div>
+      <div class="col-lg-3"></div>
+    </div><!-- /row -->
     <hr>
     <p class="centered">Nydia Silva - @nutricionviva1 - nydiasilva@hotmail.com - 2015</p>
   </div><!-- /container -->
