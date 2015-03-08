@@ -25,6 +25,7 @@
         </div><!-- /col-lg-6 -->
         <div class="col-lg-6">
           <h1>Recibe consejos saludables en tu email.</h1>
+          <%= flash_messages %>
           <%= form_for(@user, html: {class: "form-inline"}) do |f|%>
             <div class="form-group">
               <%= f.text_field :email, type: "email", class: "form-control input-lg col-lg-3", placeholder: "Email"%>

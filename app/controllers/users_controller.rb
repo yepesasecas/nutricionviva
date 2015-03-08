@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   def create
     user = User.new(user_params)
     if user.save
-      redirect_to root, notice: "Recibiras Consejos Saludables en tu email :)"
+      redirect_to root_path, notice: "Recibiras Consejos Saludables en tu email :)"
     end
   end
 
