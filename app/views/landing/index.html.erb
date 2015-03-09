@@ -20,10 +20,7 @@
   <div id="headerwrap">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
-          <%= image_tag "img.jpg", class: "img-thumbnail img-responsive"%>
-        </div><!-- /col-lg-6 -->
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-sm-offset-6">
           <h1>Recibe consejos saludables en tu email.</h1>
           <%= flash_messages %>
           <%= form_for(@user, html: {class: "form-inline"}) do |f|%>
