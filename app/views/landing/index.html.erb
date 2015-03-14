@@ -25,7 +25,7 @@
           <%= flash_messages %>
           <%= form_for(@user, html: {class: "form-inline"}) do |f|%>
             <div class="form-group">
-              <%= f.text_field :email, type: "email", class: "form-control input-lg col-lg-3", placeholder: "Email"%>
+              <%= f.text_field :email, type: "email", class: "form-control input-lg col-lg-3", placeholder: "Email", required: true %>
             </div>
             <%= f.submit "Inscribirse", type: "submit" , class:"btn btn-warning btn-lg"%>
           <% end %>
@@ -72,7 +72,7 @@
       <div class="col-sm-6 col-sm-offset-3">
         <%= form_for(@user, html: {class: "form-inline"}) do |f|%>
           <div class="form-group">
-            <%= f.text_field :email, type: "email", class: "form-control input-lg col-lg-3", placeholder: "Email"%>
+            <%= f.text_field :email, type: "email", class: "form-control input-lg col-lg-3", placeholder: "Email", required: true%>
           </div>
           <%= f.submit "Inscribirse", type: "submit" , class:"btn btn-warning btn-lg"%>
         <% end %>
